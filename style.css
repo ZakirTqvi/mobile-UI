@@ -1,0 +1,272 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.main {
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-outer {
+    height: 510px;
+    width: 280px;
+    /* margin: 20px auto 0px; */
+    /* border: 2px solid black; */
+    border-radius: 1rem;
+    position: relative;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    background-color: rgb(149, 174, 167);
+    box-shadow: 0px 8px 16px rgba(0,0,0, 0.5);
+}
+
+.mobile-inner {
+    height: 480px;
+    width: 265px;
+    /* border: 2px solid black; */
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto ;
+    margin-top: 20px;
+    background-image: url("./images/mypic.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.speaker {
+    height: 0.5rem;
+    width: 3rem;
+    background-color: black;
+    position: absolute;   
+    top: 7px;
+    left: 115px;
+    border-radius: 3px;
+}
+
+.sensor {
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 92px;
+}
+
+.front-camera {
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 180px;
+}
+.info-bar{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
+
+.battery {
+    /* background-color: blue; */
+    height: 25px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time span {
+    margin-left: 0.5rem;
+}
+
+.battery i {
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+}
+
+.google-search {
+    height: 35px;
+    width: 85%;
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+.cam-miro i {
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.srch-icon {
+    font-size: 1.2rem;
+}
+
+
+/* .google-search input {
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    width: 70%;
+    border: none;
+    outline: none;
+} */
+
+.time-weather {
+    height: 80px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date {
+    font-size: 0.75rem;
+}
+
+#time {
+    font-size: 2.5rem;
+    margin-left: 0.25rem;
+    font-weight: bold;
+}
+.weather img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.clear {
+    margin-right: 10px;
+}
+
+.weather-text {
+    font-size: 0.75rem;
+} 
+
+.apps {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 100px; */
+    position: relative;
+}
+
+.row {
+    height: 10%;
+    margin-bottom: 5px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.row button{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 5px;
+}
+
+.row3 {
+    position: absolute;
+    top: 240px;
+    left: 0;
+    width: 100%;
+}
+
+.row2 {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    width: 100%;
+}
+
+.row1 {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+}
+
+.row button i{
+    font-size: 2rem;
+} 
+
+.row a{
+    font-size: 2rem;
+}
+
+.insta {
+    color: #cc1b1e
+}
+
+.amazon {
+    color: rgb(199, 74, 74);
+}
+.facebook {
+   color: #4267B2
+}
+
+.twitter {
+    color: #00acee;
+}
+.chrome {
+    color: #1da462;
+}
+
+.play-store {
+    color: rgb(150, 46, 46);
+}
+
+.mail {
+    color: #afa331;
+}
+
+.whatsapp {
+    color: #19ad2f;
+}
+
+.call {
+    color: #480c0c;
+}
+
+.message {
+    color: #1cba90;
+}
+
+.camera {
+    color: #32363f;
+}
+
+.gallery {
+    color: rgb(159, 159, 95);
+}
+#time {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}

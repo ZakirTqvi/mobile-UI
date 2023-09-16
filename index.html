@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="mobile-outer">
+            <div class="speaker"></div>
+            <div class="sensor"></div>
+            <div class="front-camera"></div>
+
+            <!-- screen -->
+            <div class="mobile-inner">
+                
+                <div class="info-bar">
+                    <div class="time">
+                        <span id="small-time">10:04</span>
+                    </div>
+                    <div class="battery">
+                        <i class="fa-solid fa-signal"></i>
+                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                </div>
+
+                <div class="google-search">
+                   <a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-google srch-icon"></i></a> 
+                   <div class="cam-miro">
+                    <i class="fa-solid fa-microphone"></i>
+                    <i class="fa-solid fa-camera"></i>
+                  </div>
+                </div>
+
+                <div class="time-weather">
+                    <div class="time">
+                        <div id="time"></div>
+                        <!-- <h2 id="time">10:04</h2>
+                        <p class="date">Fri,15 September</p> -->
+                    </div>
+
+                    <div class="weather">
+                        <img src="./images/weather1.png">
+                        <p class="weather-text clear">Clear 32&#8451;</p>
+                        <p class="weather-text">AQI 123</p>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="apps">
+                    <div class="row row1">
+                      <a href="https://www.instagram.com/" target="_blank" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="" class="amazon"><i class="fa-brands fa-amazon"></i></a>
+                      <!-- <button><i class="fa-brands fa-instagram"></i></button> -->
+                      <!-- <button><i class="fa-brands fa-facebook"></i></button>
+                      <button><i class="fa-brands fa-twitter"></i></button>
+                      <button><i class="fa-brands fa-amazon"></i></button> -->
+                    </div>
+                    <div class="row row2">
+                        <a href="" class="chrome"><i class="fa-brands fa-chrome"></i></a>
+                        <a href="" class="play-store"><i class="fa-brands fa-google-play"></i></a>
+                        <a href="" class="mail"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+
+                        <!-- <button><i class="fa-brands fa-chrome"></i></button>
+                        <button><i class="fa-brands fa-google-play"></i></button>
+                        <button><i class="fa-solid fa-envelope"></i></button>
+                        <button><i class="fa-brands fa-whatsapp"></i></button> -->
+                    </div>
+                    <div class="row row3">  
+                        <a href="" class="call"><i class="fa-solid fa-phone"></i></a>
+                        <a href="" class="message"><i class="fa-solid fa-message"></i></a>
+                        <a href="" class="camera"><i class="fa-solid fa-camera"></i></a>
+                        <a href="" class="gallery"><i class="fa-solid fa-image"></i></a>
+                       <!-- <button><i class="fa-solid fa-phone"></i></button> 
+                       <button><i class="fa-solid fa-message"></i></button>
+                       <button><i class="fa-solid fa-camera"></i></button>
+                       <button><i class="fa-solid fa-image"></i></button> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+function updateTime() {
+  const smalltime = document.getElementById("small-time");
+  const timeElement = document.getElementById("time");
+  const currentDate = new Date();
+
+  // Extract hours and minutes
+  const hours = currentDate.getHours();
+  const minutes = currentDate.getMinutes();
+
+  // Format the time as HH:MM
+  const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+
+  // Update the content of the element
+  timeElement.textContent = formattedTime;
+  smalltime.textContent = formattedTime;
+
+}
+
+// Call the function to initially display the time
+updateTime();
+
+// Update the time every minute (60000 milliseconds)
+setInterval(updateTime, 60000);
+</script>
+        
+</body>
+</html>
