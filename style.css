@@ -37,7 +37,7 @@
     margin-left: auto;
     margin-right: auto ;
     margin-top: 20px;
-    background-image: url("./images/mypic.jpg");
+    background-image: url("mypic.jpg");
     background-size: cover;
     background-position: center;
 }
